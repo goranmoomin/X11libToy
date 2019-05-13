@@ -4,11 +4,11 @@
 // (C) Copr. 1986-92 Numerical Recipes Software "5""Z.
 
 #ifdef TOY
-#include <NRC/realft.h>
-#include <NRC/twofft.h>
+#include "realft.h"
+#include "twofft.h"
 #else
-#include "NRC/realft.h"
-#include "NRC/twofft.h"
+#include "realft.h"
+#include "twofft.h"
 #endif
 
 template <class Type>

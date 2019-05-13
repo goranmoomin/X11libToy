@@ -5,9 +5,9 @@
 
 #include <math.h>
 #ifdef TOY
-#include <Toy/message.h>
+#include "../message.h"
 #else
-#include "Toy/message.h"
+#include "../message.h"
 #endif
 
 #define JMAX 40

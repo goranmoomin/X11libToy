@@ -8,11 +8,11 @@
 #define JMAX 20
 
 #ifdef TOY
-#include <NRC/trapzd.h>
-#include <Toy/message.h>
+#include "trapzd.h"
+#include "../message.h"
 #else
-#include "NRC/trapzd.h"
-#include "Toy/message.h"
+#include "trapzd.h"
+#include "../message.h"
 #endif
 
 // Return the integral of the function func from a to b.

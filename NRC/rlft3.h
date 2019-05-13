@@ -4,11 +4,11 @@
 // (C) Copr. 1986-92 Numerical Recipes Software "5""Z.
 
 #ifdef TOY
-#include <NRC/fourn.h>
-#include <Toy/message.h>
+#include "fourn.h"
+#include "../message.h"
 #else
-#include "NRC/fourn.h"
-#include "Toy/message.h"
+#include "fourn.h"
+#include "../message.h"
 #endif
 
 void rlft3(float ***data, float **speq, unsigned long nn1, unsigned long nn2,

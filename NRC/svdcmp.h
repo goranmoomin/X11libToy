@@ -4,11 +4,11 @@
 // (C) Copr. 1986-92 Numerical Recipes Software "5""Z.
 
 #ifdef TOY
-#include <NRC/pythag.h>
-#include <Toy/matrix.h>
+#include "pythag.h"
+#include "../matrix.h"
 #else
-#include "NRC/pythag.h"
-#include "Toy/matrix.h"
+#include "pythag.h"
+#include "../matrix.h"
 #endif
 
 #define SIGN(a, b) ((b) >= 0.0 ? fabs(a) : -fabs(a))

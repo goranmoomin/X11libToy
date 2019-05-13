@@ -4,11 +4,11 @@
 // (C) Copr. 1986-92 Numerical Recipes Software "5""Z.
 
 #ifdef TOY
-#include <NRC/realft.h>
-#include <Toy/vector.h>
+#include "realft.h"
+#include "../vector.h"
 #else
-#include "NRC/realft.h"
-#include "Toy/vector.h"
+#include "realft.h"
+#include "../vector.h"
 #endif
 
 template <class Type> void cosft1(Type y[], int n) {

@@ -4,9 +4,9 @@
 // (C) Copr. 1986-92 Numerical Recipes Software "5""Z.
 
 #ifdef TOY
-#include <NRC/four1.h>
+#include "four1.h"
 #else
-#include "NRC/four1.h"
+#include "four1.h"
 #endif
 
 template <class Type> void realft(Type data[], unsigned long n, int isign) {

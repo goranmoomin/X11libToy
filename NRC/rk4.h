@@ -9,9 +9,9 @@
 // (C) Copr. 1986-92 Numerical Recipes Software "5""Z.
 
 #ifdef TOY
-#include <Toy/vector.h>
+#include "../vector.h"
 #else
-#include "Toy/vector.h"
+#include "../vector.h"
 #endif
 
 template <class Type> class RK4 {

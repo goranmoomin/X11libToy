@@ -4,9 +4,9 @@
 // (C) Copr. 1986-92 Numerical Recipes Software "5""Z.
 
 #ifdef TOY
-#include <Toy/matrix.h>
+#include "../matrix.h"
 #else
-#include "Toy/matrix.h"
+#include "../matrix.h"
 #endif
 
 #define TINY 1.0e-20;
