@@ -1,0 +1,27 @@
+# TOY  = ${HOME}/Documents/Workspace/Toy/
+
+CC := clang++
+AR := ar
+
+CFLAGS = -I. -I/opt/X11/include -Wall
+
+# SOURCE := $(wildcard *.cpp)
+SOURCE := box.cpp canvas.cpp clip.cpp graph.cpp viewport.cpp color.cpp
+OBJ := $(SOURCE:.cpp=.o)
+
+LIB := libtoy.a
+
+LIBS = libtoy.a /usr/X11/lib/libX11.a -lm
+
+default: build
+
+build: $(LIB)
+
+clean:
+	@rm $(LIB) $(OBJ)
+
+$(LIB) : $(OBJ)
+	@$(AR) -r libtoy.a $(OBJ)
+
+.cpp.o :
+	@$(CC) $(CFLAGS) -c $*.cpp
